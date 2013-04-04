@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D43640170E01AB007F8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D4363F170E01AB007F8F23 /* UIKit.framework */; };
+		07D43642170E01AB007F8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D43641170E01AB007F8F23 /* Foundation.framework */; };
+		07D43644170E01AB007F8F23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D43643170E01AB007F8F23 /* CoreGraphics.framework */; };
+		07D4364A170E01AB007F8F23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07D43648170E01AB007F8F23 /* InfoPlist.strings */; };
+		07D4364C170E01AB007F8F23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4364B170E01AB007F8F23 /* main.m */; };
+		07D43650170E01AB007F8F23 /* FRCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4364F170E01AB007F8F23 /* FRCAppDelegate.m */; };
+		07D43652170E01AB007F8F23 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D43651170E01AB007F8F23 /* Default.png */; };
+		07D43654170E01AB007F8F23 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D43653170E01AB007F8F23 /* Default@2x.png */; };
+		07D43656170E01AB007F8F23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D43655170E01AB007F8F23 /* Default-568h@2x.png */; };
+		07D43659170E01AB007F8F23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D43657170E01AB007F8F23 /* MainStoryboard.storyboard */; };
+		07D4365C170E01AB007F8F23 /* FRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4365B170E01AB007F8F23 /* FRCViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07D4363C170E01AB007F8F23 /* FRCQueuer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRCQueuer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D4363F170E01AB007F8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07D43641170E01AB007F8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07D43643170E01AB007F8F23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07D43647170E01AB007F8F23 /* FRCQueuer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRCQueuer-Info.plist"; sourceTree = "<group>"; };
+		07D43649170E01AB007F8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07D4364B170E01AB007F8F23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07D4364D170E01AB007F8F23 /* FRCQueuer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRCQueuer-Prefix.pch"; sourceTree = "<group>"; };
+		07D4364E170E01AB007F8F23 /* FRCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCAppDelegate.h; sourceTree = "<group>"; };
+		07D4364F170E01AB007F8F23 /* FRCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCAppDelegate.m; sourceTree = "<group>"; };
+		07D43651170E01AB007F8F23 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		07D43653170E01AB007F8F23 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		07D43655170E01AB007F8F23 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		07D43658170E01AB007F8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		07D4365A170E01AB007F8F23 /* FRCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCViewController.h; sourceTree = "<group>"; };
+		07D4365B170E01AB007F8F23 /* FRCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07D43639170E01AB007F8F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D43640170E01AB007F8F23 /* UIKit.framework in Frameworks */,
+				07D43642170E01AB007F8F23 /* Foundation.framework in Frameworks */,
+				07D43644170E01AB007F8F23 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D43633170E01AA007F8F23 = {
+			isa = PBXGroup;
+			children = (
+				07D43645170E01AB007F8F23 /* FRCQueuer */,
+				07D4363E170E01AB007F8F23 /* Frameworks */,
+				07D4363D170E01AB007F8F23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07D4363D170E01AB007F8F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D4363C170E01AB007F8F23 /* FRCQueuer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07D4363E170E01AB007F8F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07D4363F170E01AB007F8F23 /* UIKit.framework */,
+				07D43641170E01AB007F8F23 /* Foundation.framework */,
+				07D43643170E01AB007F8F23 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07D43645170E01AB007F8F23 /* FRCQueuer */ = {
+			isa = PBXGroup;
+			children = (
+				07D4364E170E01AB007F8F23 /* FRCAppDelegate.h */,
+				07D4364F170E01AB007F8F23 /* FRCAppDelegate.m */,
+				07D43657170E01AB007F8F23 /* MainStoryboard.storyboard */,
+				07D4365A170E01AB007F8F23 /* FRCViewController.h */,
+				07D4365B170E01AB007F8F23 /* FRCViewController.m */,
+				07D43646170E01AB007F8F23 /* Supporting Files */,
+			);
+			path = FRCQueuer;
+			sourceTree = "<group>";
+		};
+		07D43646170E01AB007F8F23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07D43647170E01AB007F8F23 /* FRCQueuer-Info.plist */,
+				07D43648170E01AB007F8F23 /* InfoPlist.strings */,
+				07D4364B170E01AB007F8F23 /* main.m */,
+				07D4364D170E01AB007F8F23 /* FRCQueuer-Prefix.pch */,
+				07D43651170E01AB007F8F23 /* Default.png */,
+				07D43653170E01AB007F8F23 /* Default@2x.png */,
+				07D43655170E01AB007F8F23 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07D4363B170E01AB007F8F23 /* FRCQueuer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D4365F170E01AB007F8F23 /* Build configuration list for PBXNativeTarget "FRCQueuer" */;
+			buildPhases = (
+				07D43638170E01AB007F8F23 /* Sources */,
+				07D43639170E01AB007F8F23 /* Frameworks */,
+				07D4363A170E01AB007F8F23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRCQueuer;
+			productName = FRCQueuer;
+			productReference = 07D4363C170E01AB007F8F23 /* FRCQueuer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07D43634170E01AB007F8F23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FRC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Eric Stern";
+			};
+			buildConfigurationList = 07D43637170E01AB007F8F23 /* Build configuration list for PBXProject "FRCQueuer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07D43633170E01AA007F8F23;
+			productRefGroup = 07D4363D170E01AB007F8F23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07D4363B170E01AB007F8F23 /* FRCQueuer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07D4363A170E01AB007F8F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D4364A170E01AB007F8F23 /* InfoPlist.strings in Resources */,
+				07D43652170E01AB007F8F23 /* Default.png in Resources */,
+				07D43654170E01AB007F8F23 /* Default@2x.png in Resources */,
+				07D43656170E01AB007F8F23 /* Default-568h@2x.png in Resources */,
+				07D43659170E01AB007F8F23 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07D43638170E01AB007F8F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D4364C170E01AB007F8F23 /* main.m in Sources */,
+				07D43650170E01AB007F8F23 /* FRCAppDelegate.m in Sources */,
+				07D4365C170E01AB007F8F23 /* FRCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07D43648170E01AB007F8F23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D43649170E01AB007F8F23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07D43657170E01AB007F8F23 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D43658170E01AB007F8F23 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07D4365D170E01AB007F8F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07D4365E170E01AB007F8F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07D43660170E01AB007F8F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRCQueuer/FRCQueuer-Prefix.pch";
+				INFOPLIST_FILE = "FRCQueuer/FRCQueuer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07D43661170E01AB007F8F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRCQueuer/FRCQueuer-Prefix.pch";
+				INFOPLIST_FILE = "FRCQueuer/FRCQueuer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07D43637170E01AB007F8F23 /* Build configuration list for PBXProject "FRCQueuer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D4365D170E01AB007F8F23 /* Debug */,
+				07D4365E170E01AB007F8F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D4365F170E01AB007F8F23 /* Build configuration list for PBXNativeTarget "FRCQueuer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D43660170E01AB007F8F23 /* Debug */,
+				07D43661170E01AB007F8F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07D43634170E01AB007F8F23 /* Project object */;
+}
