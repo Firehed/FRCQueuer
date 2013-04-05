@@ -21,7 +21,7 @@
 @property (nonatomic, strong) FRCMatch *nextMatch;
 
 @property (nonatomic, strong) NSArray *currentLabels;
-@property (nonatomic, strong) NSArray *nextLabels;
+@property (nonatomic, strong) NSArray *nextButtons;
 
 @end
 
@@ -34,9 +34,12 @@
     
 	for (int i = 0; i < numPositions; i++) {
 		((UILabel *)[self.currentLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.currentMatch teamNumberAtPosition:i]];
-		((UILabel *)[self.nextLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.nextMatch teamNumberAtPosition:i]];
-		((UILabel *)[self.nextLabels objectAtIndex:i]).backgroundColor = [self.nextMatch colorForPosition:i];
+
+		UIButton *btn = [self.nextButtons objectAtIndex:i];
+		btn.backgroundColor = [self.nextMatch colorForPosition:i];
+		[btn setTitle:[NSString stringWithFormat:@"%d", [self.nextMatch teamNumberAtPosition:i]] forState:UIControlStateNormal];
 	}
+
 	self.currentTime.text = self.currentMatch.time;
 	self.nextTime.text = self.nextMatch.time;
 }
@@ -46,6 +49,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
 	self.currentEvent = [FRCViewController SVR];
+	self.title = self.currentEvent.name;
 
 	[self initLabels];
 
@@ -63,13 +67,14 @@
 	, self.blue2current
 	, self.blue3current
 	];
-	self.nextLabels =
-	@[self.red1next
-	, self.red2next
-	, self.red3next
-	, self.blue1next
-	, self.blue2next
-	, self.blue3next
+
+	self.nextButtons =
+	@[self.red1btn
+	, self.red2btn
+	, self.red3btn
+	, self.blue1btn
+	, self.blue2btn
+	, self.blue3btn
 	];
 }
 
@@ -105,8 +110,9 @@
 
 	BOOL selected = ![self.nextMatch isTeamPresentAtPosition:pos];
 	[self.nextMatch setTeamPresence:selected atPosition:pos];
-	UILabel *label = [self.nextLabels objectAtIndex:pos];
-	label.backgroundColor = [self.nextMatch colorForPosition:pos];
+
+	UIButton *btn = [self.nextButtons objectAtIndex:pos];
+	btn.backgroundColor = [self.nextMatch colorForPosition:pos];
 
 }
 
