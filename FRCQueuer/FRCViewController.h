@@ -35,6 +35,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *blue2btn;
 @property (weak, nonatomic) IBOutlet UIButton *blue3btn;
 
+- (IBAction)nextMatchButtonPressed;
 
 
 @end

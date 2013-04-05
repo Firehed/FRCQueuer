@@ -71,7 +71,6 @@
 	];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -133,4 +132,8 @@
 
 }
 
+- (IBAction)nextMatchButtonPressed {
+	self.playing = [NSString stringWithFormat:@"%d", self.playing.intValue + 1];
+	[self updateLabels];
+}
 @end
