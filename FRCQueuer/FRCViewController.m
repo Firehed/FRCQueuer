@@ -28,7 +28,7 @@
 @implementation FRCViewController
 
 - (void)updateLabels {
-    self.playingLabel.text = self.playing;
+    self.playingLabel.text = [NSString stringWithFormat:@"Match %@", self.playing];
 	self.currentMatch = [self.currentEvent.matches objectForKey:self.playing];
 	self.nextMatch = [self.currentEvent.matches objectForKey:[NSString stringWithFormat:@"%d", self.playing.intValue + 1]];
     
