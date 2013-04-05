@@ -18,6 +18,8 @@
 		07D43656170E01AB007F8F23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D43655170E01AB007F8F23 /* Default-568h@2x.png */; };
 		07D43659170E01AB007F8F23 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D43657170E01AB007F8F23 /* MainStoryboard.storyboard */; };
 		07D4365C170E01AB007F8F23 /* FRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4365B170E01AB007F8F23 /* FRCViewController.m */; };
+		07D43664170E01EC007F8F23 /* FRCMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D43663170E01EC007F8F23 /* FRCMatch.m */; };
+		07D43667170E02B9007F8F23 /* FRCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D43666170E02B9007F8F23 /* FRCEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		07D43658170E01AB007F8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		07D4365A170E01AB007F8F23 /* FRCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCViewController.h; sourceTree = "<group>"; };
 		07D4365B170E01AB007F8F23 /* FRCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCViewController.m; sourceTree = "<group>"; };
+		07D43662170E01EC007F8F23 /* FRCMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCMatch.h; sourceTree = "<group>"; };
+		07D43663170E01EC007F8F23 /* FRCMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCMatch.m; sourceTree = "<group>"; };
+		07D43665170E02B9007F8F23 /* FRCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCEvent.h; sourceTree = "<group>"; };
+		07D43666170E02B9007F8F23 /* FRCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				07D4364E170E01AB007F8F23 /* FRCAppDelegate.h */,
 				07D4364F170E01AB007F8F23 /* FRCAppDelegate.m */,
 				07D43657170E01AB007F8F23 /* MainStoryboard.storyboard */,
+				07D43662170E01EC007F8F23 /* FRCMatch.h */,
+				07D43663170E01EC007F8F23 /* FRCMatch.m */,
+				07D43665170E02B9007F8F23 /* FRCEvent.h */,
+				07D43666170E02B9007F8F23 /* FRCEvent.m */,
 				07D4365A170E01AB007F8F23 /* FRCViewController.h */,
 				07D4365B170E01AB007F8F23 /* FRCViewController.m */,
 				07D43646170E01AB007F8F23 /* Supporting Files */,
@@ -177,6 +187,8 @@
 				07D4364C170E01AB007F8F23 /* main.m in Sources */,
 				07D43650170E01AB007F8F23 /* FRCAppDelegate.m in Sources */,
 				07D4365C170E01AB007F8F23 /* FRCViewController.m in Sources */,
+				07D43664170E01EC007F8F23 /* FRCMatch.m in Sources */,
+				07D43667170E02B9007F8F23 /* FRCEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
