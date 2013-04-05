@@ -10,6 +10,8 @@
 
 @interface FRCViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *playingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentTime;
+@property (weak, nonatomic) IBOutlet UILabel *nextTime;
 
 @property (weak, nonatomic) IBOutlet UILabel *red1current;
 @property (weak, nonatomic) IBOutlet UILabel *red2current;

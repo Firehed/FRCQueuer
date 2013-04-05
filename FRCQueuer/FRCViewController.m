@@ -37,6 +37,8 @@
 		((UILabel *)[self.nextLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.nextMatch teamNumberAtPosition:i]];
 		((UILabel *)[self.nextLabels objectAtIndex:i]).backgroundColor = [self.nextMatch colorForPosition:i];
 	}
+	self.currentTime.text = self.currentMatch.time;
+	self.nextTime.text = self.nextMatch.time;
 }
 
 - (void)viewDidLoad {
