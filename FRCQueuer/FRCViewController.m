@@ -134,6 +134,11 @@
 
 }
 
+- (IBAction)prevMatchButtonPressed {
+	self.playing = [NSString stringWithFormat:@"%d", self.playing.intValue - 1];
+	[self updateLabels];
+}
+
 - (IBAction)nextMatchButtonPressed {
 	self.playing = [NSString stringWithFormat:@"%d", self.playing.intValue + 1];
 	[self updateLabels];
