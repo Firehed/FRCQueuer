@@ -117,6 +117,9 @@
 	NSArray *rows = [NSJSONSerialization JSONObjectWithData:[jsonStr dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&jsonUnserializationError];
 
 	FRCEvent *event = [[FRCEvent alloc] init];
+	event.id = 128;
+	event.code = @"CASJ";
+	event.name = @"Silicon Valley Regional";
 	for (NSDictionary *row in rows) {
 		FRCMatch *match = [[FRCMatch alloc] init];
 		[match setTeamNumber:[[row valueForKey:@"red1"] intValue] atPosition:teamPositionRed1];
