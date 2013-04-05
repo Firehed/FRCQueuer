@@ -20,7 +20,8 @@ typedef enum {
 	numPositions
 } teamPosition;
 
-@property (nonatomic, strong) NSString *matchNumber;
+@property (nonatomic, strong) NSString *number;
+@property (nonatomic, strong) NSString *time;
 
 -(BOOL) isTeamPresentAtPosition:(teamPosition) position;
 -(NSUInteger) teamNumberAtPosition:(teamPosition) position;

@@ -16,4 +16,10 @@
 	return self;
 }
 
+-(FRCMatch *)matchAtNumber:(NSString *)number {
+	return [self.matches objectForKey:number];
+}
+-(void)addMatch:(FRCMatch *)match {
+	[self.matches setObject:match forKey:match.number];
+}
 @end

@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FRCMatch.h"
 
 @interface FRCEvent : NSObject
 
 @property (nonatomic, strong) NSMutableDictionary *matches;
 @property (nonatomic, strong) NSNumber *playingMatch;
 
+-(FRCMatch *)matchAtNumber:(NSString *)number;
+-(void)addMatch:(FRCMatch *)match;
 @end
