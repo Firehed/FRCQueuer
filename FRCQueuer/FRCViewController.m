@@ -14,7 +14,6 @@
 
 @interface FRCViewController ()
 
-@property (nonatomic, strong) FRCEvent *currentEvent;
 @property (nonatomic, strong) NSString *playing;
 
 @property (nonatomic, strong) FRCMatch *currentMatch;
@@ -48,7 +47,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-	self.currentEvent = [FRCViewController SVR];
 	self.title = self.currentEvent.name;
 
 	[self initLabels];

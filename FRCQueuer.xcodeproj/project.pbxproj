@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A8D00D170F947300CC59BF /* FRCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A8D00C170F947300CC59BF /* FRCEventsViewController.m */; };
 		07D43640170E01AB007F8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D4363F170E01AB007F8F23 /* UIKit.framework */; };
 		07D43642170E01AB007F8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D43641170E01AB007F8F23 /* Foundation.framework */; };
 		07D43644170E01AB007F8F23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D43643170E01AB007F8F23 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07A8D00B170F947300CC59BF /* FRCEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCEventsViewController.h; sourceTree = "<group>"; };
+		07A8D00C170F947300CC59BF /* FRCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCEventsViewController.m; sourceTree = "<group>"; };
 		07D4363C170E01AB007F8F23 /* FRCQueuer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRCQueuer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D4363F170E01AB007F8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07D43641170E01AB007F8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +99,8 @@
 				07D43663170E01EC007F8F23 /* FRCMatch.m */,
 				07D43665170E02B9007F8F23 /* FRCEvent.h */,
 				07D43666170E02B9007F8F23 /* FRCEvent.m */,
+				07A8D00B170F947300CC59BF /* FRCEventsViewController.h */,
+				07A8D00C170F947300CC59BF /* FRCEventsViewController.m */,
 				07D4365A170E01AB007F8F23 /* FRCViewController.h */,
 				07D4365B170E01AB007F8F23 /* FRCViewController.m */,
 				07D43646170E01AB007F8F23 /* Supporting Files */,
@@ -189,6 +194,7 @@
 				07D4365C170E01AB007F8F23 /* FRCViewController.m in Sources */,
 				07D43664170E01EC007F8F23 /* FRCMatch.m in Sources */,
 				07D43667170E02B9007F8F23 /* FRCEvent.m in Sources */,
+				07A8D00D170F947300CC59BF /* FRCEventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +317,7 @@
 				07D43661170E01AB007F8F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

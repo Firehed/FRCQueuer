@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class FRCEvent;
+
 @interface FRCViewController : UIViewController
+
+@property (nonatomic, strong) FRCEvent *currentEvent;
+
++(FRCEvent *) SVR;
+
 @property (weak, nonatomic) IBOutlet UILabel *playingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentTime;
 @property (weak, nonatomic) IBOutlet UILabel *nextTime;

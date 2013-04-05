@@ -4,10 +4,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Events View Controller - Events-->
+        <scene sceneID="DOZ-t9-yvM">
+            <objects>
+                <tableViewController id="zYL-Yf-w07" customClass="FRCEventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZLj-4F-A37">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="EventCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" id="V7b-cg-F08">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zYL-Yf-w07" id="gWh-Bz-I5I"/>
+                            <outlet property="delegate" destination="zYL-Yf-w07" id="NSW-Ue-eee"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Events" id="J6N-gK-mTa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHY-J5-Tvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="57"/>
+        </scene>
         <!--View Controller - Event Name-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="FRCViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="" storyboardIdentifier="EventDetailViewController" id="2" customClass="FRCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -298,6 +328,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event Name" id="H0V-o3-KC7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="blue1btn" destination="t3t-Dc-TNg" id="xmy-E3-nXY"/>
                         <outlet property="blue1current" destination="g26-fU-EiE" id="RiD-pL-ey5"/>
@@ -318,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="57"/>
+            <point key="canvasLocation" x="1181" y="57"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RFg-fy-YSZ">
@@ -331,7 +362,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="e4T-Wd-k6Q"/>
+                        <segue destination="zYL-Yf-w07" kind="relationship" relationship="rootViewController" id="RLJ-sb-UVO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfl-xn-U8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,34 +370,6 @@
             <point key="canvasLocation" x="262" y="57"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="FRCViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FRCViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="nextMatchButtonPressed"/>
-                <relationship kind="action" name="prevMatchButtonPressed"/>
-                <relationship kind="action" name="queuedTeamPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="blue1btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="blue1current" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="blue2btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="blue2current" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="blue3btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="blue3current" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="currentTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nextTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="playingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="red1btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="red1current" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="red2btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="red2current" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="red3btn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="red3current" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
