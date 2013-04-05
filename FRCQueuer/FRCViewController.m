@@ -35,6 +35,7 @@
 	for (int i = 0; i < numPositions; i++) {
 		((UILabel *)[self.currentLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.currentMatch teamNumberAtPosition:i]];
 		((UILabel *)[self.nextLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.nextMatch teamNumberAtPosition:i]];
+		((UILabel *)[self.nextLabels objectAtIndex:i]).backgroundColor = [self.nextMatch colorForPosition:i];
 	}
 }
 
@@ -102,21 +103,9 @@
 	}
 
 	BOOL selected = ![self.nextMatch isTeamPresentAtPosition:pos];
-	NSLog(@"%d", selected);
 	[self.nextMatch setTeamPresence:selected atPosition:pos];
 	UILabel *label = [self.nextLabels objectAtIndex:pos];
-	if (selected) {
-		label.backgroundColor = [UIColor greenColor];
-	}
-	else if (pos >= teamPositionRed1 && pos <= teamPositionRed3) {
-		label.backgroundColor = [FRCMatch redColor];
-	}
-	else if (pos >= teamPositionBlue1 && pos <= teamPositionBlue3) {
-		label.backgroundColor = [FRCMatch blueColor];
-	}
-	else {
-		NSLog(@"%d", pos);
-	}
+	label.backgroundColor = [self.nextMatch colorForPosition:pos];
 
 }
 
