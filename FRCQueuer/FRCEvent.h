@@ -14,6 +14,10 @@
 @property (nonatomic, strong) NSMutableDictionary *matches;
 @property (nonatomic, strong) NSNumber *playingMatch;
 
+@property (nonatomic) NSUInteger id;
+@property (nonatomic, strong) NSString *code;
+@property (nonatomic, strong) NSString *name;
+
 -(FRCMatch *)matchAtNumber:(NSString *)number;
 -(void)addMatch:(FRCMatch *)match;
 @end

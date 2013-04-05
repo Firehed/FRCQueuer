@@ -13,6 +13,9 @@
 -(id) init {
 	self = [super init];
 	_matches = [[NSMutableDictionary alloc] init];
+	_id = 0;
+	_code = @"";
+	_name = @"";
 	return self;
 }
 
