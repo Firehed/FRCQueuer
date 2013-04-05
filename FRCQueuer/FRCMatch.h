@@ -27,6 +27,7 @@ typedef enum {
 -(NSUInteger) teamNumberAtPosition:(teamPosition) position;
 -(void) setTeamNumber:(NSUInteger) number atPosition:(teamPosition) position;
 -(void) setTeamPresence:(BOOL)present atPosition:(teamPosition)position;
+-(UIColor *) colorForPosition:(teamPosition) position;
 
 +(UIColor *) redColor;
 +(UIColor *) blueColor;

@@ -42,6 +42,19 @@
 	[self.teamPresences setObject:[NSNumber numberWithBool:present] atIndexedSubscript:position];
 }
 
+-(UIColor *)colorForPosition:(teamPosition)position {
+	if ([self isTeamPresentAtPosition:position]) {
+		return [UIColor greenColor];
+	}
+	else if (position >= teamPositionRed1 && position <= teamPositionRed3) {
+		return [FRCMatch redColor];
+	}
+	else if (position >= teamPositionBlue1 && position <= teamPositionBlue3) {
+		return [FRCMatch blueColor];
+	}
+	return nil;
+}
+
 +(UIColor *)redColor {
 	return [[UIColor alloc] initWithRed:1.0 green:0.4 blue:0.4 alpha:1.0];
 }
