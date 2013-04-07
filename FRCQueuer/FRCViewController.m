@@ -10,7 +10,6 @@
 
 #import "FRCEvent.h"
 #import "FRCMatch.h"
-#import <QuartzCore/QuartzCore.h>
 
 @interface FRCViewController ()
 
