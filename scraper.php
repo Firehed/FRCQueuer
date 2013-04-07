@@ -23,7 +23,7 @@ $raw = "1:30 PM	Qtr 1-1	1	118	1967	254	115	766	2489
 3:46 PM	Semi 2-3	18	0	0	0	0	0	0
 3:54 PM	Final 1-1	19	0	0	0	0	0	0
 4:02 PM	Final 1-2	20	0	0	0	0	0	0
-4:10 PM	Final 1-3	21	0	0	0	0	0	0`";
+4:10 PM	Final 1-3	21	0	0	0	0	0	0";
 $base = [
 'time'  ,
 'match' ,
@@ -40,4 +40,4 @@ foreach (explode("\n", $raw) as $row) {
 	unset($match['desc']);
 	$matches[] = $match;
 }
-echo str_replace('"', '\"', json_encode($matches));
+echo str_replace('"', '\"', json_encode($matches)); // escape quotes for copy-paste into Obj-C code
