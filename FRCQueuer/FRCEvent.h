@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSMutableDictionary *matches;
 @property (nonatomic, strong) NSNumber *playingMatch;
+@property (nonatomic, strong) NSMutableArray *matchOrder;
 
 @property (nonatomic) NSUInteger id;
 @property (nonatomic, strong) NSString *code;

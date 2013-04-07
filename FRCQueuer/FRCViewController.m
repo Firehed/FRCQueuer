@@ -14,7 +14,7 @@
 
 @interface FRCViewController ()
 
-@property (nonatomic, strong) NSString *playing;
+@property (nonatomic) NSUInteger playing;
 
 @property (nonatomic, strong) FRCMatch *currentMatch;
 @property (nonatomic, strong) FRCMatch *nextMatch;
@@ -27,9 +27,10 @@
 @implementation FRCViewController
 
 - (void)updateLabels {
-    self.playingLabel.text = [NSString stringWithFormat:@"Match %@", self.playing];
-	self.currentMatch = [self.currentEvent.matches objectForKey:self.playing];
-	self.nextMatch = [self.currentEvent.matches objectForKey:[NSString stringWithFormat:@"%d", self.playing.intValue + 1]];
+	NSString *matchName = [self.currentEvent.matchOrder objectAtIndex:self.playing];
+    self.playingLabel.text = [NSString stringWithFormat:@"Match %@", matchName];
+	self.currentMatch = [self.currentEvent.matches objectForKey:[self.currentEvent.matchOrder objectAtIndex:self.playing]];
+	self.nextMatch = [self.currentEvent.matches objectForKey:[self.currentEvent.matchOrder objectAtIndex:self.playing+1]];
     
 	for (int i = 0; i < numPositions; i++) {
 		((UILabel *)[self.currentLabels objectAtIndex:i]).text = [NSString stringWithFormat:@"%d", [self.currentMatch teamNumberAtPosition:i]];
@@ -51,7 +52,7 @@
 
 	[self initLabels];
 
-	self.playing = @"1";
+	self.playing = 0;
 
 	[self updateLabels];
 }
@@ -132,9 +133,10 @@
 		[match setTeamNumber:[[row valueForKey:@"blue1"] intValue] atPosition:teamPositionBlue1];
 		[match setTeamNumber:[[row valueForKey:@"blue2"] intValue] atPosition:teamPositionBlue2];
 		[match setTeamNumber:[[row valueForKey:@"blue3"] intValue] atPosition:teamPositionBlue3];
-		match.number = [NSString stringWithFormat:@"%d", [[row valueForKey:@"match"] intValue]];
+		match.number = [row valueForKey:@"match"];
 		match.time = [row valueForKey:@"time"];
 		[event addMatch:match];
+		[event.matchOrder addObject:match.number];
 	}
 	return event;
 
@@ -142,12 +144,16 @@
 }
 
 - (IBAction)prevMatchButtonPressed {
-	self.playing = [NSString stringWithFormat:@"%d", self.playing.intValue - 1];
+	if (self.playing) {
+		self.playing -= 1;
+	}
 	[self updateLabels];
 }
 
 - (IBAction)nextMatchButtonPressed {
-	self.playing = [NSString stringWithFormat:@"%d", self.playing.intValue + 1];
+	if (self.playing + 2 < self.currentEvent.matchOrder.count) { // +2 for 0-index vs count going over
+		self.playing += 1;
+	}
 	[self updateLabels];
 }
 @end

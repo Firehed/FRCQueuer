@@ -16,6 +16,7 @@
 	_id = 0;
 	_code = @"";
 	_name = @"";
+	_matchOrder = [[NSMutableArray alloc] init];
 	return self;
 }
 
